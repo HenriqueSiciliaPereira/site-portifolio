@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Henrique Sicilia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="root-container">
+      <div class="content-container">
+        <section class="section-hero">
+          <div class="barra-navegacao">
+            <h2 class="titulo-navegacao">Henrique Sicilia</h2>
+            <div>
+              <a
+                onclick="onClickScrollTo('section-abilities')"
+                class="links-navegacao"
+                >Habilidades</a
+              >
+              <a
+                class="links-navegacao"
+                onclick="onClickScrollTo('section-portfolio')"
+                >Portfólio</a
+              >
+              <a
+                class="links-navegacao"
+                onclick="onClickScrollTo('section-experiences')"
+                >Experiência</a
+              >
+            </div>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTATO
+            </button>
+          </div>
+          <div class="hero-info">
+            <div class="hero-info-text-container">
+              <h1 class="hero-info-title">
+                Olá, Muito prazer! <br />
+                Sou o Henrique Sicilia.
+              </h1>
+              <p class="hero-info-subtitle">
+                Programador desde 2021, foco em desenvolvimento Backend nas linguagens Java e JavaScript.
+              </p>
+              <button onclick="onClickScrollTo('section-contact')">
+                ENTRAR EM CONTATO
+              </button>
+              <div class="hero-info-icons-container">
+                <a onclick="onClickLink('https://github.com/HenriqueSiciliaPereira')">
+                  <img
+                    alt="Github"
+                    class="hero-info-icons-img"
+                    src="icons/github.png"
+                  />
+                </a>
+                <a
+                  onclick="onClickLink('https://www.linkedin.com/in/henriquesicilia/')"
+                >
+                  <img
+                    alt="Linkedin"
+                    class="hero-info-icons-img"
+                    src="icons/linkedin.png"
+                  />
+                </a>
+                
+                <a
+                  onclick="onClickLink('https://www.instagram.com/henriquesicilia/')"
+                >
+                  <img
+                    alt="Instagram"
+                    class="hero-info-icons-img"
+                    src="icons/instagram.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                class="hero-info-image"
+                src="perfil.jpeg"
+                alt="Perfil Gabriel Rangel"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="section-abilities" id="section-abilities">
+          <h2>Habilidades</h2>
+          <h2 class="verde">que domino.</h2>
+          <div class="ability-cards-container">
+            <div class="ability-card">
+              <div class="ability-card-icon-container">
+                <img
+                  class="ability-card-icon-img"
+                  src="icons/habilidades.png"
+                  alt="Habilidade Gerais"
+                />
+              </div>
+              <h5>Habilidade Gerais</h5>
+              <p class="card">
+                Tecnologias que utilizo no dia a dia da programação.
+              </p>
+              <ul class="ability-list">
+                <li>Git</li>
+                <li>Github</li>
+                <li>Docker</li>
+                <li>VSCode</li>
+                <li>Portugol</li>
+                <li>Insomnia</li>
+              </ul>
+            </div>
+            <div class="ability-card">
+              <div class="ability-card-icon-container">
+                <img
+                  class="ability-card-icon-img"
+                  src="icons/internet.png"
+                  alt="Habilidade Gerais"
+                />
+              </div>
+              <h5>Front-End</h5>
+              <p class="card">
+                Ferramentas utilizadas para criação de sistemas web.
+              </p>
+              <ul class="ability-list">
+                <li>JavScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+                
+              </ul>
+            </div>
+            <div class="ability-card">
+              <div class="ability-card-icon-container">
+                <img
+                  class="ability-card-icon-img"
+                  src="icons/hosting.png"
+                  alt="Habilidade Gerais"
+                />
+              </div>
+              <h5>Back-End</h5>
+              <p class="card">
+                Controle de banco de dados e aplições na nuvem.
+              </p>
+              <ul class="ability-list">
+                <li>JavScript</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        
+        <section class="section-portfolio" id="section-portfolio">
+          
+        <section class="section-experiences" id="section-experiences">
+          <h2>Experiências</h2>
+          <h2 class="verde">Profissionais.</h2>
+          <div class="section-experiences-card">
+            <img
+              class="section-experiences-card-img"
+              src="icons/hidraulica.png"
+            />
+            <div class="section-experiences-card-text-container">
+              <h6 class="section-experiences-card-title">
+                Assistente de Manutenção
+              </h6>
+              <p class="section-experiences-card-subtitle">
+                Hidráulica Emilio
+              </p>
+              <p class="section-experiences-card-text">
+                Gerenciamento de materiais controlando a saída e entrada e atividades relacionadas à engenharia.
+              </p>
+            </div>
+          </div>
+          
+        </section>
+        <section class="section-contact" id="section-contact">
+          <h2>Como posso</h2>
+          <h2 class="verde">te ajudar ?</h2>
+          <p>Estou à diposição para ajudar o seu projeto ou sua empresa.</p>
+          <div class="section-contact-item">
+            <img
+              src="icons/mail.png"
+              alt="E-mail icon"
+              class="section-contact-item-icon"
+            />
+            <a href="malito:email@exemplo.com">siciliahenrique@gmail.com</a>
+          </div>
+          <div class="section-contact-item">
+            <img
+              src="icons/phone.png"
+              alt="Phone icon"
+              class="section-contact-item-icon"
+            />
+            <a href="tel:(31)99999-9999">(11)96625-3877</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h2 class="titulo-navegacao">Henrique Sicilia</h2>
+        <div class="footer-social-icons-container">
+          <a onclick="onClickLink('https://github.com/HenriqueSiciliaPereira')">
+            <img
+              alt="Github"
+              class="hero-info-icons-img"
+              src="icons/github.png"
+            />
+          </a>
+          <a
+            onclick="onClickLink('https://www.linkedin.com/in/henriquesicilia/')"
+          >
+            <img
+              alt="Linkedin"
+              class="hero-info-icons-img"
+              src="icons/linkedin.png"
+            />
+          </a>
+         
+          <a
+            onclick="onClickLink('https://www.instagram.com/henriquesicilia/')"
+          >
+            <img
+              alt="Instagram"
+              class="hero-info-icons-img"
+              src="icons/instagram.png"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
